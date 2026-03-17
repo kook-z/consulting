@@ -637,26 +637,40 @@
 
   /* ─── MOBILE (≤600px) ─── */
   @media (max-width: 600px) {
-    /* 헤더 */
+    /* 헤더 — 2줄 구조로 재설계 */
     .site-header {
-      padding: 0 16px;
-      height: 56px;
+      padding: 8px 16px;
+      height: auto;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
     }
     .header-logos {
       gap: 8px;
+      justify-content: center;
     }
     .logo-badge img {
-      height: 28px !important;
+      height: 26px !important;
     }
     .logo-badge span { display: none; }
     .x-divider { padding: 0 2px; font-size: 11px; }
-    .header-cta { gap: 6px; }
-    .btn-sm {
-      padding: 6px 12px;
-      font-size: 12px;
+    .header-cta {
+      display: flex;
+      gap: 8px;
+      width: 100%;
     }
-    /* 헤더 전화번호 텍스트 줄이기 */
-    .btn-outline { font-size: 11px; padding: 6px 10px; }
+    .header-cta a {
+      flex: 1;
+      text-align: center;
+      justify-content: center;
+      padding: 9px 8px !important;
+      font-size: 12px !important;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+    .btn-outline {
+      font-size: 12px !important;
+    }
 
     /* 히어로 */
     .hero {
@@ -788,7 +802,7 @@
         함께 설계합니다
       </h1>
       <p class="hero-subtitle">
-        국희재수학전문학원과 패스파인더의 협약으로 운영되는<br>
+        국희재수학과 패스파인더의 협약으로 운영되는<br>
         <strong>학년별 맞춤 생기부·입시 컨설팅 프로그램</strong>입니다.<br>
         AI 빅데이터 분석 기반 리포트부터 밀착 관리까지,<br>
         합격의 전 과정을 책임집니다.
@@ -812,11 +826,11 @@
         </div>
         <div class="stat-item">
           <div class="stat-num">1:1</div>
-          <div class="stat-label">밀착 관리</div>
+          <div class="stat-label"노션/관리톡</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">전과정</div>
-          <div class="stat-label">원서 접수 동행</div>
+          <div class="stat-num">생기부</div>
+          <div class="stat-label">수행/탐구/세특</div>
         </div>
       </div>
     </div>
@@ -841,7 +855,7 @@
       <div style="font-size:28px;background:rgba(30,111,255,0.12);border:1px solid rgba(30,111,255,0.3);border-radius:12px;width:52px;height:52px;display:flex;align-items:center;justify-content:center;">🏫</div>
       <div>
         <div class="org-name">국희재수학전문학원</div>
-        <div class="org-desc">수학 전문 교육 / 부천 지역</div>
+        <div class="org-desc">수학 전문 교육 / 광주 수완/봉선</div>
       </div>
     </div>
     <div class="partner-x">×</div>
